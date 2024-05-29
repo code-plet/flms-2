@@ -68,7 +68,7 @@
                 <a style="text-align: center; color: black;" class="nav-link" id="pills-clubs-tab" data-toggle="pill" href="#pills-clubs" role="tab" aria-controls="pills-clubs" aria-selected="false">Clubs</a>
             </li>
             <li class="nav-item col-md-4">
-                <a style="text-align: center; color: black;" class="nav-link" id="pills-leagues-tab" data-toggle="pill" href="#pills-leagues" role="tab" aria-controls="pills-leagues" aria-selected="false">leagues</a>
+                <a style="text-align: center; color: black;" class="nav-link" id="pills-leagues-tab" data-toggle="pill" href="#pills-leagues" role="tab" aria-controls="pills-leagues" aria-selected="false">Leagues</a>
             </li>
 
         </ul>

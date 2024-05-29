@@ -5,7 +5,7 @@
         <img src="{{ asset('img/soccer.png') }}" width="10%" height="20%">
         <h1>Welcome to FLMS</h1>
 
-        <p>A Football Leagues Management System Web application Developed by team MENY</p>
+        <p>A Football Leagues Management System Web application</p>
 
         <div class="row justify-content-center">
             <div class="trumbowyg-button-group">

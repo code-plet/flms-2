@@ -49,7 +49,7 @@ class ChangePasswordController extends Controller
                 $user->password)) { //if old password equals current password
                 //update user password using new password
                 $user =  User::find($user);
-                $user->password =  $request->only(['new_password']);
+                $user->password = Hash::make($request->get('new_password'));
                 $user->save();
 
                 //redirect to home with success message
