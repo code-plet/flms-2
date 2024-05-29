@@ -48,7 +48,9 @@ class ChangePasswordController extends Controller
             if(Hash::check($request->get('old_password'),
                 $user->password)) { //if old password equals current password
                 //update user password using new password
-                $user->update($request->only(['new_password']));
+                $user =  User::find($user);
+                $user->password =  $request->only(['new_password']);
+                $user->save();
 
                 //redirect to home with success message
                 return redirect()->route('home')

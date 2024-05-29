@@ -7,6 +7,7 @@ use App\Http\Controllers\SeasonController;
 use App\Http\Controllers\TableController;
 use App\Http\Controllers\ClubController;
 use App\Http\Controllers\UserInformationController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
