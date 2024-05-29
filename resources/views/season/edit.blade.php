@@ -29,11 +29,11 @@
                                 <input type="text" name="name" value="{{$season->name}}" class="form-control">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="">league Name</label>
+                                <label for="">Start Date</label>
                                 <input type="text" name="start_date" value="{{$season->start_date}}" placeholder="yyyy-mm-dd" class="form-control">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="">League Description</label>
+                                <label for="">End Date</label>
                                 <input type="text" name="end_date" value="{{$season->end_date}}" placeholder="yyyy-mm-dd"  class="form-control">
                             </div>
                             <div class="form-group mb-3">
