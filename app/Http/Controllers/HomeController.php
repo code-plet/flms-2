@@ -7,6 +7,7 @@ use App\Models\League;
 use App\Models\Player;
 use App\Models\Season;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -28,10 +29,10 @@ class HomeController extends Controller
     public function index()
     {
         $context = [
-            'clubs' => Club::take(4)->get(),
-            'players' => Player::take(4)->get(),
-            'leagues' => League::take(4)->get(),
-            'seasons' => Season::take(4)->get()
+            'clubs' => DB::table('Clubs')->orderBy('name')->get(),
+            'players' => DB::table('Players')->orderBy('first_name')->get(),
+            'leagues' => DB::table('Leagues')->orderBy('league_name')->get(),
+            'seasons' => Season::all()
         ];
 
         return view('home', $context);
